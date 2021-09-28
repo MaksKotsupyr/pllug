@@ -3,6 +3,8 @@
 //     console.log(i)
 // }
 
+// Не працює
+
 // Написати код, яка на вході приймає стрічку і змінює всі малі букви на великі, а великі на малі. Тобто ‘Test’ ⇒ ‘tEST’;
 let str = prompt('Write some srting');
 let massStr = [];   
@@ -16,6 +18,8 @@ for(let i=0; i<massStr.length; i++){
     }
 }
 console.log('New str: '+changedStr.join(''));
+
+// Працює
 
 //Попрактикуватися з оператором typeOf
 typeof undefined // "undefined"

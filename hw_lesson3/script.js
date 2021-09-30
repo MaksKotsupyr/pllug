@@ -24,7 +24,7 @@ function deleteIndex(arr1, index){
     arr1.splice(index, 1);
     console.log(arr1);
 }
-deleteIndex([1,2,3,4,5], 3);
+deleteIndex([1,2,3,4,5], 2);
 
 // Створити функцію, яка приймає один масив у якості аргументу та повертає булеве значення в залежності чи в неї передали пустий масив чи ні;
 function boolArr(massive){

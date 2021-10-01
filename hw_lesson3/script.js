@@ -12,7 +12,9 @@ let arr = [];
 
 // Створити пустий масив довжиною 100500 елементів;
 let array = [];
-array[100499]=[];
+arr.length = 100500
+console.log(arr.length)
+// array[100499]=[];
 
 // Створити масив з декількома елементами;
 // Зробити заповнений масив пустим;
@@ -21,28 +23,28 @@ mass.length = 0;
 
 // Дано масив, [1,2,3,4,5], потрібно створити функцію, яка видалить певний елемент з масиву за його індексом та поверне новий масив(оновлений- після видалення);
 function deleteIndex(arr1, index){
-    arr1.splice(index, 1);
+    return arr1.splice(index, 1);
     console.log(arr1);
 }
 deleteIndex([1,2,3,4,5], 2);
 
 // Створити функцію, яка приймає один масив у якості аргументу та повертає булеве значення в залежності чи в неї передали пустий масив чи ні;
 function boolArr(massive){
-    massive.length > 0 ? console.log(true) : console.log(false);
+    return massive.length > 0 ? console.log(true) : console.log(false);
 }
 boolArr([]);
 
 // Створити функцію, яка приймає один об’єкт у якості аргументу та повертає булеве значення в залежності чи в неї передали пустий об’єкт чи ні;
 let emptyObj = {};
 function boolObj(obj){
-    Object.keys(obj).length > 0 ? console.log(true) : console.log(false);
+    return Object.keys(obj).length > 0 ? console.log(true) : console.log(false);
 }
 boolObj(emptyObj);
 
 // Створити функцію, яка обєднає два масиви в один та поверне його в якості результату;
 function combineArr(arr1, arr2) {
     let combinedArr = arr1.concat(arr2);
-    console.log(combinedArr)
+    return combinedArr;
 }
 combineArr([1,2], [3,4]);
 
@@ -52,7 +54,7 @@ function powArr(arr) {
     arr.forEach(element => {
         newArr.push(element*element*element);
     });
-    console.log(newArr)
+    return newArr;
 }
 powArr([1,3,5]);
 
